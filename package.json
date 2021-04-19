@@ -8,7 +8,7 @@
     "build:prependctx": "echo 'var ctx = this;' > ./output/tmp && cat ./output/index.js >> ./output/tmp && mv ./output/tmp ./output/index.js"
   },
   "author": "Waldemar Lehner",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
