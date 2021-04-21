@@ -2,12 +2,11 @@
   "name": "typescript-openhab-template",
   "version": "1.0.0",
   "description": "Template for writing and compiling typescript files into openhab ecmascript rules",
-  "main": "index.js",
   "scripts": {
     "build": "rm output -r ||: && rollup -c && npm run build:prependctx",
     "build:prependctx": "echo 'var ctx = this;' > ./output/tmp && cat ./output/index.js >> ./output/tmp && mv ./output/tmp ./output/index.js"
   },
-  "author": "Waldemar Lehner",
+  "author": "Your Name <yourMail>",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
