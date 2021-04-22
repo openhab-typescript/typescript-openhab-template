@@ -1,5 +1,3 @@
-import { isJSDocVariadicType } from "typescript";
-
 export default class LoggerFactory
 {
     public static getByRuleId(ruleId: string)

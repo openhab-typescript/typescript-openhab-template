@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
+    "openhab-typescript-typings": "^0.0.2",
     "rollup": "^2.45.2",
     "typescript": "^4.2.4"
   }

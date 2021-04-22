@@ -7,7 +7,7 @@
 
 // To show how importing code from a different file would work, a logger-wrapper has been created in the ./logger.ts file.
 import LoggerFactory, { Logger } from "./logger";
-import openHabRoot from "./openHabRoot";
+import {thisOpenHab} from "openhab-typescript-typings";
 
 // While the following statement will function correctly when uncommented, 
 // it is discouraged to use "this" directly in the root scope.
@@ -18,7 +18,7 @@ this.logger = typeof this.logger === "undefined" ? LoggerFactory.getByRuleId("my
 
 
 // Instead store this in a variable. That way you can add an interface to the variable which will help with autocompletion.
-const _this : openHabRoot & ownRootDefinitions = this;
+const _this : thisOpenHab & ownRootDefinitions = this;
 _this.logger = typeof _this.logger === "undefined" ? LoggerFactory.getByRuleId("myRuleId") : _this.logger;
 
 
