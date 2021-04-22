@@ -6,7 +6,7 @@ ECMAScript-Scripts to, for example, be used in Rules.
 ## Getting started.
 Clone the repository using 
 
-`git clone https://gitlab.com/WaldemarLehner/typescript-openhab-template.git`
+`git clone https://github.com/openhab-typescript/typescript-openhab-template`
 
 Run `npm install` to install the dependencies.
 
